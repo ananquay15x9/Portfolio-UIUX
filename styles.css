@@ -1,0 +1,223 @@
+@font-face {
+    font-family: "AbhayaRegular";
+    src: url(./font/Abhaya_Libre/AbhayaLibre-Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "AbhayaMedium";
+    src: url(./font/Abhaya_Libre/AbhayaLibre-Medium.ttf) format("truetype") ;
+}
+
+@font-face {
+    font-family: "AbhayaSemiBold";
+    src: url(./font/Abhaya_Libre/AbhayaLibre-SemiBold.ttf) format("truetype") ;
+}
+
+@font-face {
+    font-family: "AbhayaBold";
+    src: url(./font/Abhaya_Libre/AbhayaLibre-Bold.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "FahkwangRegular";
+    src: url(./font/Fahkwang/Fahkwang-Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "FahkwangMedium";
+    src: url(./font/Fahkwang/Fahkwang-Medium.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "FahkwangSemiBold";
+    src: url(./font/Fahkwang/Fahkwang-SemiBold.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "FahkwangBold";
+    src: url(./font/Fahkwang/Fahkwang-Bold.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "HelveticaNeueLight";
+    src: url(./font/HelveticaNeue/HelveticaNeueLight.otf) format("opentype");
+}
+
+@font-face {
+    font-family: "HelveticaNeueMedium";
+    src: url(./font/HelveticaNeue/HelveticaNeueMedium.otf) format("opentype");
+}
+
+@font-face {
+    font-family: "HelveticaNeueRegular";
+    src: url(./font/helvetica-neue-5/HelveticaNeueBlack.otf) format("opentype");
+}
+
+@font-face {
+    font-family: "OswaldRegular";
+    src: url(./font/Oswald/Oswald-Regular.ttf) format("truetype");
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #070610;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    font-family: "FahkwangRegular", sans-serif;
+}
+
+/* Sidebar styles */
+.sidebar {
+    position: absolute;
+    inset: 0 auto 0;
+    left: 0;
+    top: 0;
+    width: 111px;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(152, 119, 190, 1) 0%, rgba(121, 103, 161, 1) 100%);
+    z-index: 1;
+}
+
+
+/* root-color variable */
+.bg-root {
+    position: relative;
+    height: 100vh;
+    background: #070610;
+    overflow: hidden; 
+}
+
+/* Top blur effect */
+.blur-top {
+    position: absolute;
+    width: 470px;
+    height: 811px;
+    background: #9877BE;
+    filter: blur(220px) brightness(1.5);
+    transform: rotate(32deg);
+    left: 368px;
+    top: -520.46px;
+    z-index: 2;
+    rotate: 90deg;
+    border-radius: 50%;
+}
+
+/* Bottom blur effect */
+.blur-bottom-left {
+    position: absolute;
+    width: 600px;
+    height: 800px;
+    background: linear-gradient(180deg, #7F739F 0%, #2E2939 100%);
+    filter: blur(220px) brightness(1.5);
+    left: 32px;
+    top: 850px;
+    z-index: 2;
+}
+
+/* Bottom right blur effect */
+.blur-bottom-right {
+    position: absolute;
+    width: 191px;
+    height: 600px;
+    background: #B095C4;
+    filter: blur(220px) brightness(1.2);
+    left: 1614.98px;
+    top: 538.14px;
+    rotate: 303deg;
+    z-index: 2;
+    border-radius: 50%;
+}
+
+/*logo styles*/
+.logo {
+    position: absolute;
+    top: 10px;
+    left: -30px;
+    height: auto;
+    z-index: 3; /* Above sidebar and blur effects */
+}
+
+.logo-icon {
+    position: absolute;
+    bottom: 50px;
+    left: 30px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    z-index: 3; /* Above sidebar and blur effects */
+}
+
+/* Navbar styles */
+.navbar-collapse {
+    position: absolute;
+    top: 50px;
+    left: 222px;
+    z-index: 3; /* Above sidebar and blur effects */
+}
+
+.navbar-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 30px;
+}
+
+.navbar-nav li {
+    margin: 0;
+}
+
+.navbar-nav a {
+    color: white;
+    text-decoration: none;
+    font-family: "AbhayaRegular", serif;
+    font-size: 22px;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav a:hover {
+    color: #9877BE;
+}
+
+.navbar-nav .active a {
+    color: #9877BE;
+    font-weight: bold;
+}
+
+
+
+/* --------------------------------------------------------------------------------------------- */
+/* for bigger screens */
+@media (min-width: 2560px) {
+    .sidebar {
+        width: 120px;
+    }
+
+    .logo {
+        left: -30px;
+    }
+
+    .logo-icon {
+        left: 35px;
+    }
+
+    .blur-bottom-left {
+        top: 1010px;
+    }
+
+    .blur-bottom-right {
+        width: 369px;
+        height: 835px;
+        left: 2069.98px;
+        top: 768.14px;
+        rotate: 309deg;
+
+    }
+
+    .navbar-nav {
+        gap: 50px;
+    }
+}
