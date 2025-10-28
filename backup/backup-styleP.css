@@ -595,20 +595,29 @@ body {
 /* for bigger screens */
 @media (min-width: 2560px) {
     .sidebar {
-        width: 150px;
+        width: 333px;
     }
 
     .logo {
-        left: -30px;
-        top: -5px;
+        left: 30px;
+        top: 5px;
     }
 
     .logo img {
-        width: 200px;
+        width: 250px;
     }
 
     .logo-icon {
         left: 35px;
+    }
+
+    #project-list {
+        top: 311px;
+        left: 55px;
+    }
+
+    .project-item {
+        gap: 50px;
     }
 
     .blur-bottom-left {
@@ -632,11 +641,30 @@ body {
 
     .navbar-nav a {
         font-size: 26px;
+        color: #b4b4b4
     }
 
     .navbar-collapse {
         top: 69px;
-        left: 290px;
+        left: 411px;
+    }
+
+    #project-header {
+        left: 411px;
+    }
+
+    #project-header h1 {
+        font-size: 45px;
+        margin: 15px 0 -11px 0;
+    }
+
+    #project-header p {
+        font-size: 18px;
+    }
+
+    .project-skills {
+        margin-top: 15px;
+        font-size: 18px;
     }
 
     .intro-content {
