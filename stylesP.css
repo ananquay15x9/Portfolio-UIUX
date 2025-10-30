@@ -254,16 +254,17 @@ body {
 
 /*project header styles*/
 #project-header {
-    width: 100%;
+    width: 385px;
     position: absolute;
-    top: 99px;
+    top: 125px;
     left: 400px;
     z-index: 1001; /* Above sidebar and blur effects */
 }
 
 #project-header h1 {
-    font-family: "DMMonoRegular", serif;
-    font-size: 39px;
+    font-family: "AbhayaRegular", serif;
+    font-size: 50px;
+    letter-spacing: 8px;
     color: #f5f5f5;
     margin: 0 0 -11px 0;
     font-weight: lighter;
@@ -271,7 +272,7 @@ body {
 
 #project-header p {
     font-family: "DMMonoRegular", serif;
-    font-size: 15px;
+    font-size: 16px;
     color: #1a194b;
 }
 
